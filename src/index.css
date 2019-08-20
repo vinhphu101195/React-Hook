@@ -5,9 +5,87 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+}
+.App {
+  background: #00000002;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  color: #7cfc00;
+}
+.navbar {
+  padding: 10px 20px;
+  text-align: center;
+  background: #000000;
+}
+.navbar h1 {
+  margin: 10px 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.book-list {
+  margin: 20px;
+}
+.book-list ul {
+  padding: 0;
+  list-style-type: none;
+}
+.book-list li {
+  background: #000000;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.book-list li:hover {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.book-list .title {
+  font-weight: bold;
+  color: #7cfc00;
+  font-size: 1.2em;
+}
+.book-list .author {
+  font-size: 0.9em;
+  color: #7efc0081;
+}
+.empty {
+  margin: 20px;
+  text-align: center;
+}
+form {
+  padding: 20px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #000000;
+  color: #7cfc00;
+  border: 0;
+}
+input:focus {
+  background-color: black;
+  border: 1px solid #51ff00;
+}
+input:hover {
+  border: 1px solid #7cfc00;
+}
+::placeholder {
+  color: #7efc0081;
+  opacity: 1; /* Firefox */
+}
+input[type="submit"] {
+  margin: 10px auto;
+  color: #7cfc00;
+  background: black;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
+  font-size: 25px;
+}
+input[type="submit"]:hover {
+  border: 3px solid #7cfc00;
 }
