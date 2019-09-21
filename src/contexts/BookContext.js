@@ -25,7 +25,11 @@ const BookContextProvider = props => {
 
   const [books, dispatch] = useReducer(bookReducer, initialState, () => {
     const localData = localStorage.getItem("books");
-    return localData.length > 2 ? JSON.parse(localData) : initialState;
+    if (localData.length) {
+      return initialState;
+    } else {
+      return localData.length > 2 ? JSON.parse(localData) : initialState;
+    }
   });
 
   // run if books change
